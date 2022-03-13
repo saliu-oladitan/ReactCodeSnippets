@@ -1,3 +1,10 @@
+3. <!------------Fetch Data from API------------------>     
+fetch('api/Sample/Registers')
+            .then(response => response.json())
+            .then(data => {
+                this.setState({ registers: data, loading: false });
+            });
+
 2. <!------------Good error message to enable JS in browser and a link to how to do it------------------>     
       <noscript>
           <h1 style="color:red">ERROR! ERROR!!</h1> <br /><br />
